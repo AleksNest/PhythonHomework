@@ -13,13 +13,18 @@ input()
 
 print ('Задача 3. Алгоритм перемешивания списка ')
 import random
+import time
 print ('исходный список:', end = '     ')
 list = [1, 'world', -100, 2.5, 'привет']
 print (list)
-random.shuffle(list)
-print ('перемешанный список:', list)
-
+while True:
+    random.shuffle(list)
+    print ('перемешанный список:', list)
+    time.sleep(1)
 input()
+
+
+
 
 print ('Задача 2. Задайте список из n чисел последовательности (1+1/n)^n и выведите на экран их сумму. Нахождение экспоненты')
 n = int(input ('введите N: '))
